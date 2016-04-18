@@ -1,0 +1,7 @@
+api_homepage:
+    path:     /
+    defaults: { _controller: ApiBundle:Default:index }
+
+api_champs:
+    path:     /champs
+    defaults: { _controller: ApiBundle:Champ:getChamps }
