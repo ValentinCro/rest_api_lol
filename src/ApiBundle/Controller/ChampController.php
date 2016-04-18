@@ -8,9 +8,11 @@ class ChampController extends FOSRestController
 {
     public function getChampsAction()
     {
-        $data = ...; // get data, in this case list of users.
+        $data = $this->getDoctrine()
+            ->getRepository('ApiBundle:Champion')
+            ->findAll();
         $view = $this->view($data, 200)
-            ->setTemplate("MyBundle:Users:getUsers.html.twig")
+            ->setTemplate("ApiBundle:getUsers.html.twig")
             ->setTemplateVar('users')
         ;
 

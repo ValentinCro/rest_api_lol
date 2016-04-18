@@ -10,7 +10,7 @@ use ApiBundle\Entity\User;
 class LoadUserData implements FixtureInterface
 {
     public function load(ObjectManager $manager) {
-        $users = new Array();
+        $users = array();
 
         $user = new User();
 
@@ -25,7 +25,6 @@ class LoadUserData implements FixtureInterface
 
         $user->setLogin('amine');
         $user->setPassword('23bc6df7647b818d79ce7fc43fa0f460c188205a');
-        $user->setMail('');
         $user->setRole(0);
 
         $users[] = $user;
@@ -34,7 +33,6 @@ class LoadUserData implements FixtureInterface
 
         $user->setLogin('rddu76');
         $user->setPassword('e18640aba45d7b82629e52ca81ad0406156be1b9');
-        $user->setMail('');
         $user->setRole(0);
 
         $users[] = $user;
@@ -43,7 +41,6 @@ class LoadUserData implements FixtureInterface
 
         $user->setLogin('underset');
         $user->setPassword('29475197ed29d53f3e56cfa4eb719e926b55c0e5');
-        $user->setMail('');
         $user->setRole(0);
 
         $users[] = $user;
@@ -57,7 +54,7 @@ class LoadUserData implements FixtureInterface
 
         $users[] = $user;
 
-        foreach ($user in $users) {
+        foreach ($users as $user) {
             $manager->persist($user);
         }
         $manager->flush();
