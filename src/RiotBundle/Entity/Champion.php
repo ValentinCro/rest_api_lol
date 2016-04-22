@@ -1,16 +1,16 @@
 <?php
 
-namespace ApiBundle\Entity;
+namespace RiotBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * FreeChampion
+ * Champion
  *
- * @ORM\Table(name="free_champion")
- * @ORM\Entity(repositoryClass="ApiBundle\Repository\FreeChampionRepository")
+ * @ORM\Table(name="champion")
+ * @ORM\Entity(repositoryClass="RiotBundle\Repository\ChampionRepository")
  */
-class FreeChampion
+class Champion
 {
     /**
      * @var int
@@ -31,14 +31,14 @@ class FreeChampion
     /**
      * @var string
      *
-     * @ORM\Column(name="name", type="string", length=40, nullable=true, unique=true)
+     * @ORM\Column(name="name", type="string", length=80, unique=true)
      */
     private $name;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="image", type="string", length=40)
+     * @ORM\Column(name="image", type="string", length=255)
      */
     private $image;
 
@@ -65,7 +65,7 @@ class FreeChampion
      *
      * @param integer $idRiot
      *
-     * @return FreeChampion
+     * @return Champion
      */
     public function setIdRiot($idRiot)
     {
@@ -89,7 +89,7 @@ class FreeChampion
      *
      * @param string $name
      *
-     * @return FreeChampion
+     * @return Champion
      */
     public function setName($name)
     {
@@ -113,7 +113,7 @@ class FreeChampion
      *
      * @param string $image
      *
-     * @return FreeChampion
+     * @return Champion
      */
     public function setImage($image)
     {
@@ -137,7 +137,7 @@ class FreeChampion
      *
      * @param string $imageLoader
      *
-     * @return FreeChampion
+     * @return Champion
      */
     public function setImageLoader($imageLoader)
     {

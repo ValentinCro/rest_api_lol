@@ -1,6 +1,6 @@
 <?php
 
-namespace ApiBundle\Entity;
+namespace RiotBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 
@@ -8,7 +8,7 @@ use Doctrine\ORM\Mapping as ORM;
  * UserChamps
  *
  * @ORM\Table(name="user_champs")
- * @ORM\Entity(repositoryClass="ApiBundle\Repository\UserChampsRepository")
+ * @ORM\Entity(repositoryClass="RiotBundle\Repository\UserChampsRepository")
  */
 class UserChamps
 {

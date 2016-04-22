@@ -1,0 +1,4 @@
+riot_homepage:
+    path:     /
+    defaults: { _controller: RiotBundle:Default:index }
+

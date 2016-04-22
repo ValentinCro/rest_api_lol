@@ -1,0 +1,4 @@
+api :
+    type: rest
+    resource:     "RiotBundle:Champ"
+    name_prefix:  api_

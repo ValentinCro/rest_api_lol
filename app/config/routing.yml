@@ -1,4 +1,13 @@
-api:
-    resource: "@ApiBundle/Resources/config/routing.yml"
+user:
+    resource: "@UserBundle/Resources/config/routing.yml"
     prefix:   /
 
+riot:
+    resource: "@RiotBundle/Resources/config/routing.yml"
+    prefix:   /
+
+#REST
+rest :
+    type : rest
+    resource : "routing_rest.yml"
+    prefix : /api

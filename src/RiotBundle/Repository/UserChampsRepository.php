@@ -1,6 +1,6 @@
 <?php
 
-namespace ApiBundle\Repository;
+namespace RiotBundle\Repository;
 
 /**
  * UserChampsRepository

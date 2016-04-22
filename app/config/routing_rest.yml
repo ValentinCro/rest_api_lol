@@ -1,0 +1,8 @@
+User_Api :
+    type : rest
+    resource: "@UserBundle/Resources/config/routing_rest.yml"
+
+Riot_Api :
+    type : rest
+    resource: "@RiotBundle/Resources/config/routing_rest.yml"
+

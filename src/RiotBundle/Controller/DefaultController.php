@@ -1,6 +1,6 @@
 <?php
 
-namespace ApiBundle\Controller;
+namespace RiotBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 
@@ -8,6 +8,6 @@ class DefaultController extends Controller
 {
     public function indexAction()
     {
-        return $this->render('ApiBundle:Default:index.html.twig');
+        return $this->render('RiotBundle:Default:index.html.twig');
     }
 }

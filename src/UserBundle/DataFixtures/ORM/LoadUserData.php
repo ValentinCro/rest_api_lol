@@ -1,11 +1,11 @@
 <?php
-// src/ApiBundle/DataFixtures/ORM/LoadUserData.php
+// src/UserBundle/DataFixtures/ORM/LoadUserData.php
 
-namespace ApiBundle\DataFixtures\ORM;
+namespace UserBundle\DataFixtures\ORM;
 
 use Doctrine\Common\DataFixtures\FixtureInterface;
 use Doctrine\Common\Persistence\ObjectManager;
-use ApiBundle\Entity\User;
+use UserBundle\Entity\User;
 
 class LoadUserData implements FixtureInterface
 {
